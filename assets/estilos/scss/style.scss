@@ -1,0 +1,68 @@
+$yellow: #ffee00dc;
+$fonts-sono: 'Sono', sans-serif;
+$fonts-pratick: 'Patrick Hand', cursive;
+$fonts-rubik: 'Rubik Glitch', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: $yellow;
+    padding: 10px;
+    h1 {
+        color: #000;
+        margin-left: 5px;
+        font: {
+            weight: bold;
+            family: $fonts-rubik;
+        }
+    }
+    i {
+        font-size: 2rem;
+        margin-right: 5px;
+        cursor: pointer;
+        &:hover {
+            color: #ff000f;
+        }
+    }
+}
+main {
+    height: 100vh;
+    width: 100%;
+
+    .background {
+        height: 60vh;
+        width: 100%;
+        background: url('../../images/bg1.jpg') center no-repeat;
+        background-size: cover;
+        .bg-escuro {
+            height: 60vh;
+            background: rgba(0, 0, 0, 0.323);
+            flex-direction: column;
+           .textos {
+            text-align: center;
+            margin-right: 50px;
+            h2 {
+                color: #fff;
+                letter-spacing: 5px;
+                font: {
+                    family: $fonts-pratick;
+                    weight: bold;
+                    size: 3.5rem;
+                }
+            }
+            p {
+                color: #e7e7e7;
+                font: {
+                    size: 1.5rem;
+                    style: italic;
+                }
+            }
+           }
+        }
+    }
+
+}

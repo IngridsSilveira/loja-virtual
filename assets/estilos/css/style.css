@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(255, 238, 0, 0.862745098);
+  padding: 10px;
+}
+.header h1 {
+  color: #000;
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: "Rubik Glitch", cursive;
+}
+.header i {
+  font-size: 2rem;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.header i:hover {
+  color: #ff000f;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+main .background {
+  height: 60vh;
+  width: 100%;
+  background: url("../../images/bg1.jpg") center no-repeat;
+  background-size: cover;
+}
+main .background .bg-escuro {
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.323);
+  flex-direction: column;
+}
+main .background .bg-escuro .textos {
+  text-align: center;
+  margin-right: 50px;
+}
+main .background .bg-escuro .textos h2 {
+  color: #fff;
+  letter-spacing: 5px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+main .background .bg-escuro .textos p {
+  color: #e7e7e7;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
