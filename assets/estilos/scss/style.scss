@@ -1,68 +1,161 @@
-$yellow: #ffee00dc;
-$fonts-sono: 'Sono', sans-serif;
-$fonts-pratick: 'Patrick Hand', cursive;
-$fonts-rubik: 'Rubik Glitch', cursive;
+$yellow: #ffee00b8;
+$black: #000;
+$red: #db0909;
+$fonts-sono: "Sono", sans-serif;
+$fonts-pratick: "Patrick Hand", cursive;
+$fonts-rubik: "Rubik Glitch", cursive;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 .header {
-    background-color: $yellow;
-    padding: 10px;
-    h1 {
-        color: #000;
+  background-color: $yellow;
+  padding: 5px;
+  position: fixed;
+  h1 {
+    color: $black;
+    margin-left: 5px;
+    font: {
+      weight: bold;
+      family: $fonts-rubik;
+    }
+  }
+  i {
+    font-size: 2rem;
+    margin-right: 8px;
+    cursor: pointer;
+    span {
         margin-left: 5px;
-        font: {
-            weight: bold;
-            family: $fonts-rubik;
-        }
     }
-    i {
-        font-size: 2rem;
-        margin-right: 5px;
-        cursor: pointer;
-        &:hover {
-            color: #ff000f;
-        }
+    &:hover {
+      color: $red;
     }
+  }
 }
 main {
-    height: 100vh;
-    width: 100%;
-
-    .background {
-        height: 60vh;
-        width: 100%;
-        background: url('../../images/bg1.jpg') center no-repeat;
-        background-size: cover;
-        .bg-escuro {
-            height: 60vh;
-            background: rgba(0, 0, 0, 0.323);
-            flex-direction: column;
-           .textos {
-            text-align: center;
-            margin-right: 50px;
-            h2 {
-                color: #fff;
-                letter-spacing: 5px;
-                font: {
-                    family: $fonts-pratick;
-                    weight: bold;
-                    size: 3.5rem;
-                }
-            }
-            p {
-                color: #e7e7e7;
-                font: {
-                    size: 1.5rem;
-                    style: italic;
-                }
-            }
-           }
+  height: 100vh;
+  width: 100%;
+  .background {
+    height: 60vh;
+    background: url("../../images/bg1.jpg") center no-repeat;
+    background-size: cover;
+    .bg-escuro {
+      height: 60vh;
+      background: rgba(0, 0, 0, 0.323);
+      flex-direction: column;
+      .textos {
+        text-align: center;
+        margin-right: 50px;
+        h2 {
+          color: #fff;
+          letter-spacing: 5px;
+          font: {
+            family: $fonts-pratick;
+            weight: bold;
+            size: 3.5rem;
+          }
         }
+        p {
+          color: #e7e7e7;
+          font: {
+            size: 1.5rem;
+            style: italic;
+          }
+        }
+      }
     }
-
+  }
+  .produtos {
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+    h1 {
+      color: $black;
+      letter-spacing: -2px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      font: {
+        family: $fonts-sono;
+        weight: bold;
+        size: 2.5rem;
+      }
+    }
+    .produtos-content {
+      flex-wrap: wrap;
+    }
+    .imgs-produto {
+      border-radius: 10px;
+      width: 70%;
+      height: 100px;
+    }
+    .produto-div {
+      width: 200px;
+      height: 180px;
+      margin-left: 10px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(0.9);
+      }
+      h3 {
+        letter-spacing: -1px;
+        font: {
+          family: $fonts-sono;
+          size: 1.5rem;
+        }
+      }
+      p {
+        color: $black;
+        font-size: 1rem;
+      }
+      i {
+        color: $red;
+        font-size: 1.2rem;
+        cursor: pointer;
+        &:hover {
+          color: $black;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .hr {
+      border-top: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #e7e7e7;
+  font-size: 1rem;
+  .footer_copy {
+    line-height: 20px;
+  }
+  .footer_copy a {
+    text-decoration: none;
+  }
+  .bi {
+    font-size: 1.5rem;
+  }
+  .bi-instagram {
+    color: #ca0080;
+  }
+  .bi-linkedin {
+    color: #3385ff;
+  }
+  .bi-github {
+    color: #000;
+  }
+  .bi-whatsapp {
+    color: #2fb731;
+  }
 }

@@ -5,8 +5,9 @@
 }
 
 .header {
-  background-color: rgba(255, 238, 0, 0.862745098);
-  padding: 10px;
+  background-color: rgba(255, 238, 0, 0.7215686275);
+  padding: 5px;
+  position: fixed;
 }
 .header h1 {
   color: #000;
@@ -16,11 +17,14 @@
 }
 .header i {
   font-size: 2rem;
-  margin-right: 5px;
+  margin-right: 8px;
   cursor: pointer;
 }
+.header i span {
+  margin-left: 5px;
+}
 .header i:hover {
-  color: #ff000f;
+  color: #db0909;
 }
 
 main {
@@ -29,7 +33,6 @@ main {
 }
 main .background {
   height: 60vh;
-  width: 100%;
   background: url("../../images/bg1.jpg") center no-repeat;
   background-size: cover;
 }
@@ -53,6 +56,94 @@ main .background .bg-escuro .textos p {
   color: #e7e7e7;
   font-size: 1.5rem;
   font-style: italic;
+}
+main .produtos {
+  height: auto;
+  flex-direction: column;
+  padding: 15px;
+}
+main .produtos h1 {
+  color: #000;
+  letter-spacing: -2px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+main .produtos .produtos-content {
+  flex-wrap: wrap;
+}
+main .produtos .imgs-produto {
+  border-radius: 10px;
+  width: 70%;
+  height: 100px;
+}
+main .produtos .produto-div {
+  width: 200px;
+  height: 180px;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+main .produtos .produto-div:hover {
+  transform: scale(0.9);
+}
+main .produtos .produto-div h3 {
+  letter-spacing: -1px;
+  font-family: "Sono", sans-serif;
+  font-size: 1.5rem;
+}
+main .produtos .produto-div p {
+  color: #000;
+  font-size: 1rem;
+}
+main .produtos .produto-div i {
+  color: #db0909;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+main .produtos .produto-div i:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+main .produtos .hr {
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #e7e7e7;
+  font-size: 1rem;
+}
+.footer .footer_copy {
+  line-height: 20px;
+}
+.footer .footer_copy a {
+  text-decoration: none;
+}
+.footer .bi {
+  font-size: 1.5rem;
+}
+.footer .bi-instagram {
+  color: #ca0080;
+}
+.footer .bi-linkedin {
+  color: #3385ff;
+}
+.footer .bi-github {
+  color: #000;
+}
+.footer .bi-whatsapp {
+  color: #2fb731;
 }
 
 /*# sourceMappingURL=style.css.map */
