@@ -26,7 +26,7 @@
 <body>
     <header class="container-fluid d-flex align-items-center justify-content-between header">
         <h1>Fruit Frutas</h1>
-        <i class="fa-sharp fa-solid fa-cart-shopping "><span class="cartNum">0</span></i>
+        <i class="fa-sharp fa-solid fa-cart-shopping " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span class="cartNum">0</span></i>
     </header>
     <main>
         <section class="background">
@@ -69,33 +69,56 @@
             <div class="hr"></div>
             <div class="produtos-content d-flex align-items-center justify-content-center">
                 <div class="produto-div" id="6">
-                    <img src="assets/images/banana.jpg" alt="banana" class="imgs-produto">
-                    <h3>Banana</h3>
+                    <img src="assets/images/uva.jpg" alt="banana" class="imgs-produto">
+                    <h3>Uva</h3>
                     <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
                 </div>
                 <div class="produto-div" id="7">
-                    <img src="assets/images/goiaba.png" alt="banana" class="imgs-produto">
-                    <h3>Goiaba</h3>
+                    <img src="assets/images/abacaxi.webp" alt="banana" class="imgs-produto">
+                    <h3>Abacaxi</h3>
                     <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
                 </div>
                 <div class="produto-div" id="8">
-                    <img src="assets/images/laranja.jpg" alt="banana" class="imgs-produto">
-                    <h3>Laranja</h3>
+                    <img src="assets/images/manga.jpg" alt="banana" class="imgs-produto">
+                    <h3>Manga</h3>
                     <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
                 </div>
                 <div class="produto-div" id="9">
-                    <img src="assets/images/melancia.jpg" alt="banana" class="imgs-produto">
-                    <h3>Melancia</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <img src="assets/images/maca.jpg" alt="banana" class="imgs-produto">
+                    <h3>Maça</h3>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="maca"></i></p>
                 </div>
                 <div class="produto-div" id="10">
-                    <img src="assets/images/pera.jpg" alt="banana" class="imgs-produto">
-                    <h3>Pera</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <img src="assets/images/morango.jpg" alt="banana" class="imgs-produto">
+                    <h3>Morango</h3>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="morango"></i></p>
                 </div>
             </div>
         </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Produtos no Carrinho</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="d-flex" id="teste">
+                <!-- <p class="me-2">Banana</p>
+                <div class="d-flex">
+                    <span class="me-2">+</span><span class="me-2">0</span><span>-</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
         <footer class="footer container-fluid">
             <div class="footer_copy">
                 <p>Desenvolvido por <a target="_blank" href="ttps://github.com/IngridsSilveira">Ingrid de Souza 🔥</a>
