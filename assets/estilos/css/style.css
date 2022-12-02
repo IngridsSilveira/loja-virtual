@@ -5,9 +5,11 @@
 }
 
 .header {
-  background-color: rgba(255, 238, 0, 0.7215686275);
+  background-color: rgba(255, 238, 0, 0.9450980392);
   padding: 5px;
   position: fixed;
+  z-index: 1;
+  height: 60px;
 }
 .header h1 {
   color: #000;
@@ -30,6 +32,7 @@
 main {
   height: 100vh;
   width: 100%;
+  z-index: 1;
 }
 main .background {
   height: 60vh;
@@ -116,7 +119,7 @@ main .produtos .hr {
 }
 
 .modal-header {
-  background-color: rgba(255, 238, 0, 0.7215686275);
+  background-color: rgba(255, 238, 0, 0.9450980392);
 }
 .modal-header .modal-title {
   font-weight: bold;

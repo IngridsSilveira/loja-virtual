@@ -1,4 +1,4 @@
-$yellow: #ffee00b8;
+$yellow: #ffee00f1;
 $black: #000;
 $red: #db0909;
 $fonts-sono: "Sono", sans-serif;
@@ -14,6 +14,8 @@ $fonts-rubik: "Rubik Glitch", cursive;
   background-color: $yellow;
   padding: 5px;
   position: fixed;
+  z-index: 1;
+  height: 60px;
   h1 {
     color: $black;
     margin-left: 5px;
@@ -37,6 +39,7 @@ $fonts-rubik: "Rubik Glitch", cursive;
 main {
   height: 100vh;
   width: 100%;
+  z-index: 1;
   .background {
     height: 60vh;
     background: url("../../images/bg1.jpg") center no-repeat;
