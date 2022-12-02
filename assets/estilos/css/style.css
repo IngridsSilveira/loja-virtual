@@ -115,6 +115,45 @@ main .produtos .hr {
   margin: 10px auto;
 }
 
+.modal-header {
+  background-color: rgba(255, 238, 0, 0.7215686275);
+}
+.modal-header .modal-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: cursive;
+}
+
+.modal-footer p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.caixa-div {
+  flex-direction: column;
+}
+
+.div-itens {
+  background-color: #ffecec;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Sono", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lixeira {
+  font-size: 1.5rem;
+  color: #db0909;
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   align-items: center;

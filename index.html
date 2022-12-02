@@ -43,27 +43,27 @@
                 <div class="produto-div" id="1">
                     <img src="assets/images/banana.jpg" alt="banana" class="imgs-produto">
                     <h3>Banana</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="banana"></i></p>
                 </div>
                 <div class="produto-div" id="2">
                     <img src="assets/images/goiaba.png" alt="banana" class="imgs-produto">
                     <h3>Goiaba</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="goiaba"></i></p>
                 </div>
                 <div class="produto-div" id="3">
                     <img src="assets/images/laranja.jpg" alt="banana" class="imgs-produto">
                     <h3>Laranja</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="laranja"></i></p>
                 </div>
                 <div class="produto-div" id="4">
                     <img src="assets/images/melancia.jpg" alt="banana" class="imgs-produto">
                     <h3>Melancia</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="melancia"></i></p>
                 </div>
                 <div class="produto-div" id="5">
                     <img src="assets/images/pera.jpg" alt="banana" class="imgs-produto">
                     <h3>Pera</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="pera"></i></p>
                 </div>
             </div>
             <div class="hr"></div>
@@ -71,22 +71,22 @@
                 <div class="produto-div" id="6">
                     <img src="assets/images/uva.jpg" alt="banana" class="imgs-produto">
                     <h3>Uva</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="uva"></i></p>
                 </div>
                 <div class="produto-div" id="7">
                     <img src="assets/images/abacaxi.webp" alt="banana" class="imgs-produto">
                     <h3>Abacaxi</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="abacaxi"></i></p>
                 </div>
                 <div class="produto-div" id="8">
                     <img src="assets/images/manga.jpg" alt="banana" class="imgs-produto">
                     <h3>Manga</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="manga"></i></p>
                 </div>
                 <div class="produto-div" id="9">
                     <img src="assets/images/maca.jpg" alt="banana" class="imgs-produto">
                     <h3>Maça</h3>
-                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="maca"></i></p>
+                    <p>R$5,00 <i class="fa-sharp fa-solid fa-cart-shopping cart" id="maça"></i></p>
                 </div>
                 <div class="produto-div" id="10">
                     <img src="assets/images/morango.jpg" alt="banana" class="imgs-produto">
@@ -101,19 +101,17 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Produtos no Carrinho</h1>
+          <h1 class="modal-title" id="staticBackdropLabel">Seu carrinho</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="d-flex" id="teste">
-                <!-- <p class="me-2">Banana</p>
-                <div class="d-flex">
-                    <span class="me-2">+</span><span class="me-2">0</span><span>-</span>
-                </div> -->
+            <div class="d-flex caixa-div" id="caixaDiv">
+                
             </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer d-flex justify-content-between">
+            <p>Total: <span id="total">R$0,00</span></p>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Finalizar Compra</button>
         </div>
       </div>
     </div>
