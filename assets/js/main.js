@@ -1,7 +1,7 @@
 const cart = [...document.querySelectorAll(".cart")]
 let cartNum = document.querySelector(".cartNum")
 const caixaDiv = document.getElementById("caixaDiv")
-let count = 1
+const total = document.getElementById("total")
 
 const criar = (elemento) => {
     //CRIA UM ELEMENTO BASEADO NO CLICK DO CARRINHO
@@ -25,13 +25,13 @@ const criar = (elemento) => {
             const alvo = evt.target
             const parenteAlvo = alvo.parentElement.parentElement
             parenteAlvo.remove()
-            const teste = [...document.querySelectorAll(".div-itens")]
-            for(let i in teste){
-                console.log(teste.length)
-                if(cartNum.textContent >= "1"){
-                    cartNum.textContent = teste.length
+           
+                if(caixaDiv.children.length >= 0){
+                    cartNum.textContent = caixaDiv.children.length
                 } 
-            }
+                else if(caixaDiv.children.length == 0) {
+                    cartNum.textContent = caixaDiv.children.length
+                }
         })
     })
 }
@@ -40,8 +40,11 @@ cart.map((el) => {
     el.addEventListener("click", (evt) => {
         //Criando o elemento
         criar(el)
+
         //QUANTIDADE DE VEZES QUE O ELEMENTO É CLICADO//
-        cartNum.textContent = count; 
-        count++;
+        if(caixaDiv.children.length >= 0){
+            cartNum.textContent = caixaDiv.children.length
+        } 
+        
     })
 })
