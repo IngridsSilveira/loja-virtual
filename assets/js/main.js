@@ -1,8 +1,7 @@
 const cart = [...document.querySelectorAll(".cart")];
 let cartNum = document.querySelector(".cartNum");
 const caixaDiv = document.getElementById("caixaDiv");
-const total = document.getElementById("total");
-let valor = document.getElementById("valor").innerHTML;
+
 
 const criar = (elemento) => {
   //CRIA UM ELEMENTO BASEADO NO CLICK DO CARRINHO
@@ -35,18 +34,10 @@ const criar = (elemento) => {
     });
   });
 };
-
 cart.map((el) => {
   el.addEventListener("click", (evt) => {
     //Criando o elemento
     criar(el);
-
-    console.log(evt.target)
-
-    const valorNumerico = valor.replace(/[^\d,]/g, "");
-    const teste = parseFloat(valorNumerico) + parseFloat(valorNumerico);
-
-    total.innerHTML = `R$ ${teste}`;
 
     //QUANTIDADE DE VEZES QUE O ELEMENTO É CLICADO//
     if (caixaDiv.children.length >= 0) {
